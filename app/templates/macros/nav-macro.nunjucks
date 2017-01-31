@@ -1,0 +1,17 @@
+{% macro active(activePage='home') %}
+	<header>
+		<nav class="navbar navbar-inverse">
+			<ul class="nav navbar-nav ">
+				<li>
+					<a href="/index.html" class="{%if activePage == 'home' %} active {% endif %}">Home</a>
+				</li>
+				<li>
+					<a href="/about.html" class="{%if activePage == 'about' %} active {% endif %}">About</a>
+				</li>
+				<li>
+					<a href="subfolder/subfile.html" class="{%if activePage == 'subfolder' %} active {% endif %}">Subfile</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+{% endmacro %}

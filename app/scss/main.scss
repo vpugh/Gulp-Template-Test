@@ -1,0 +1,82 @@
+@import "node_modules/plumber-sass/plumber";
+
+body {
+	background-color: #ddd;
+	color: #222;
+	//font-size: 16px;
+	line-height: 1.4;
+    //background-image: linear-gradient(to top, rgba(242, 201, 76, 0.5) 0, rgba(242, 201, 76, 0.5) 1px, transparent 1px);
+    //background-size: 100% 16px;
+}
+
+header .navbar {
+	border-radius: 0;
+	margin: 0;
+}
+.hero {
+	background-image: url(http://source.unsplash.com/random);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 50px 0;
+	min-height: 450px;
+	position: relative;
+}
+
+.hero-content {
+	position: relative;
+	top: 25%;
+	text-align: center;
+	width: 100%;
+}
+
+.hero-content h2 {
+	color: #fff;
+	font-size: 80px;
+}
+
+.hero-content p {
+	color: #fff;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.hero-content .btn {
+	border-radius: 2px;
+	padding: 20px 30px;
+}
+
+main {
+	min-height: 500px;
+	padding: 50px 0;
+}
+
+p {
+	@include plumber(
+		$grid-height: 1rem,
+		$baseline: 0.128,
+		$font-size: 1.75,
+		$line-height: 3,
+		$leading-top: 1,
+        $leading-bottom: 2
+	);
+}
+
+footer {
+	padding: 30px 0;
+	font-size: 14px;
+	color: #bbb;
+	background: #222;
+	text-align: center;
+}
+.active {
+	font-weight: bold;
+	color: #fff !important;
+}
+.team__item {
+	float:left;
+	padding: 0 14px;
+	img {
+		max-height: 300px;
+	}
+}

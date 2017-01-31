@@ -1,0 +1,30 @@
+{% extends "layout.nunjucks" %}
+
+{% block title %}
+<title>Subfile</title>
+{% endblock %}
+
+{% block csscontent %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--build:css ../css/styles.min.css-->
+	<link rel="stylesheet" href="../css/main.css">
+	<!-- endbuild -->
+{% endblock %}
+
+{% block navigation%}
+{% import 'macros/nav-macro.nunjucks' as nav %}
+{{nav.active('subfolder')}}
+{% endblock %}
+
+{% block content %}
+<h2>The Team</h2>
+<div class="team">
+  {% for people in people %}
+  <div class="team__item">
+  	<h3>{{people.name}}</h3>
+    <img src="{{people.img}}" alt="{{people.alt}}">
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

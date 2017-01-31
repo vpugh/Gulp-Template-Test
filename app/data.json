@@ -1,0 +1,23 @@
+{
+	"images": [{
+		"src": "http://placekitten.com/200/350",
+		"alt": "Image One alt text"
+	}, {
+		"src": "http://placekitten.com/200/400",
+		"alt": "Image Two alt text"
+	}],
+
+	"people": [{
+		"name": "George Orwell",
+		"img": "http://placekitten.com/200/350",
+		"alt": "Writer Number One"
+	}, {
+		"name": "Steven King",
+		"img": "http://placekitten.com/200/400",
+		"alt": "Writer Number Two"
+	}, {
+		"name": "Richard Castle",
+		"img": "http://placekitten.com/200/700",
+		"alt": "Writer Number Three"
+	}]
+}

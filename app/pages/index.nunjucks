@@ -1,0 +1,25 @@
+{% extends "layout.nunjucks" %}
+{% block title %}
+<title>Welcome</title>
+{% endblock %}
+{% block navigation %}
+{% import 'macros/nav-macro.nunjucks' as nav %}
+{{nav.active('home')}}
+{% endblock %}
+{% block hero %}
+<section class="hero">
+	<div class="hero-content">
+		<h2>Welcome All</h2>
+		<p>Subtitle words and words</p>
+		
+		<a href="/" class="btn btn-lg btn-primary">Get Started</a>
+		<a href="/contact" class="btn btn-lg btn-primary">Contact</a>
+	</div>
+</section>
+{% endblock %}
+{% block content %}
+<h1>This is the index page</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum totam, ad sed numquam deleniti optio ea cum officia beatae consectetur, pariatur ab dolore commodi nobis aperiam, quaerat corrupti dignissimos. Vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus amet consequatur odit expedita est libero. Tempore tempora, magnam. Placeat blanditiis quo praesentium illo. Facilis dignissimos officiis, ullam dolorum asperiores ipsa?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum totam, ad sed numquam deleniti optio ea cum officia beatae consectetur, pariatur ab dolore commodi nobis aperiam, quaerat corrupti dignissimos. Vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus amet consequatur odit expedita est libero. Tempore tempora, magnam. Placeat blanditiis quo praesentium illo. Facilis dignissimos officiis, ullam dolorum asperiores ipsa?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum totam, ad sed numquam deleniti optio ea cum officia beatae consectetur, pariatur ab dolore commodi nobis aperiam, quaerat corrupti dignissimos. Vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus amet consequatur odit expedita est libero. Tempore tempora, magnam. Placeat blanditiis quo praesentium illo. Facilis dignissimos officiis, ullam dolorum asperiores ipsa?</p>
+{% endblock %}
